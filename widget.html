@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Counter Widget</title>
+<style>
+  #counter {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<div id="counter">Loading...</div>
+
+<script>
+  // Function to fetch data from JSON file
+  function fetchData(url) {
+    return fetch(url)
+      .then(response => response.json())
+      .catch(error => console.error('Error fetching data:', error));
+  }
+
+  // Function to update counter
+  function updateCounter(data) {
+    const counterElement = document.getElementById('counter');
+    if (counterElement) {
+      counterElement.textContent = data.counter;
+    }
+  }
+
+  // Function to initialize the widget
+  function init() {
+    const jsonUrl = 'https://raw.githubusercontent.com/SummitLakeNRD/widgetUpdate/main/test.json'; // Path to your JSON file or URL
+    fetchData(jsonUrl)
+      .then(data => {
+        updateCounter(data);
+        // You can add more logic here if needed
+      });
+  }
+
+  // Initialize the widget
+  init();
+</script>
+
+</body>
+</html>
