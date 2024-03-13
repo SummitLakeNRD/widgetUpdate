@@ -1,0 +1,18 @@
+##Place file in the following destination: /etc/systemd/system/ ###
+
+[Unit]
+Description=Service file to automatically update HTML code on SLPT website with current LCT spawn count
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/bash /home/fishtrap/Desktop/widgetUpdate/jsonPush.sh  
+WorkingDirectory=/home/fishtrap/Desktop/widgetUpdate
+StandardOutput=file:/home/fishtrap/Desktop/widgetUpdate/errorLogs/main_output.log
+StandardError=file:/home/fishtrap/Desktop/widgetUpdateerrorLogs/error_file.log
+Restart=always
+RestartSec=21600
+User=fishtrap
+
+[Install]
+WantedBy=multi-user.target
