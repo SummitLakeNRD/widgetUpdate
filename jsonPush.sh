@@ -2,7 +2,7 @@
 
 python3 ./dataProcessing/exportJson.py
 sleep 60
-dateTime = $(date)
+dateTime=$(date)
 
 git add .
 git commit -m "Scheduled push: $dateTime" > /dev/null
