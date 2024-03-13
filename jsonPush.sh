@@ -1,7 +1,7 @@
 #!/bin/bash
 
 python3 ./dataProcessing/exportJson.py
-sleep 15
+sleep 60
 dateTime=$(date)
 
 git add .
