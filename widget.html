@@ -13,28 +13,55 @@
         fetch('https://raw.githubusercontent.com/SummitLakeNRD/widgetUpdate/main/data.json')
             .then(response => response.json())
             .then(data => {
+                // Pull date, cumulative uprun, and cumulative downrun count from json file
                 const date = data.map(item => item.date);
                 const uprun = data.map(item => item.uprun);
                 const downrun = data.map(item => item.downrun);
+                
+                // Index year value from first date entry of json file
+                const year = date[0].slice(0,4)
 
                 const ctx = document.getElementById('myChart').getContext('2d');
                 const myChart = new Chart(ctx, {
                     type: 'line',
+                    // Read in data from json http request
                     data: {
                         labels: date,
                         datasets: [{
                             label: 'Uprun LCT',
                             data: uprun,
-                            borderColor: 'rgb(30, 160, 30)',
+                            borderColor: 'rgb(0, 158, 96)',
                             tension: 0.1
                         }, {
                             label: 'Downrun LCT',
                             data: downrun,
-                            borderColor: 'rgb(160, 50, 30)',
+                            borderColor: 'rgb(230, 100, 81)',
                             tension: 0.1
                         }]
                     },
+                    // Adjust aesthetics
                     options: {
+                        plugins: { 
+                            title: {
+                                display: true,
+                                text: ["Mahogany Creek Lahontan Cutthroat Trout", 
+                                       "Spawn Run in " + year],
+                                font: {
+                                    size: 36,
+                                    weight: "bold"
+                                },
+                                color: "black"
+                            },
+                        legend: {
+                            labels: {
+                                color: "black", 
+                                font: {
+                                    size: 18,
+                                    weight: "bold"
+                                }
+                            }
+                        }
+                        },
                         scales: {
                             x: {
                                 title: {
@@ -42,8 +69,17 @@
                                         size: 24,
                                         weight: "bold"
                                     },
+                                    color:  'black',
                                     display: true,
                                     text: 'Date'
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 14,
+                                    },
+                                    color: 'black',
+                                    maxRotation: 90,
+                                    minRotation: 45
                                 }
                             },
                             y: {
@@ -52,8 +88,15 @@
                                         size: 24,
                                         weight: "bold"
                                     },
+                                    color: 'black',
                                     display: true,
-                                    text: 'Spawning LCT Count'
+                                    text: 'LCT Count'
+                                },
+                                ticks: {
+                                    font: {
+                                        size: 14,
+                                    },
+                                    color: 'black'
                                 },
                                 beginAtZero: true
                             }
@@ -67,3 +110,4 @@
     </script>
 </body>
 </html>
+
