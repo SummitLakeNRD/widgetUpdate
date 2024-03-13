@@ -1,50 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Counter Widget</title>
-<style>
-  #counter {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line Graph from JSON Data</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
 </head>
 <body>
+    <canvas id="myChart" width="400" height="200"></canvas>
 
-<div id="counter">Loading...</div>
+    <script>
+        fetch('https://raw.githubusercontent.com/SummitLakeNRD/widgetUpdate/main/data.json')
+            .then(response => response.json())
+            .then(data => {
+                const date = data.map(item => item.date);
+                const uprun = data.map(item => item.uprun);
+                const downrun = data.map(item => item.downrun);
 
-<script>
-  // Function to fetch data from JSON file
-  function fetchData(url) {
-    return fetch(url)
-      .then(response => response.json())
-      .catch(error => console.error('Error fetching data:', error));
-  }
-
-  // Function to update counter
-  function updateCounter(data) {
-    const counterElement = document.getElementById('counter');
-    if (counterElement) {
-      counterElement.textContent = data.counter;
-    }
-  }
-
-  // Function to initialize the widget
-  function init() {
-    const jsonUrl = 'https://raw.githubusercontent.com/SummitLakeNRD/widgetUpdate/main/test.json'; // Path to your JSON file or URL
-    fetchData(jsonUrl)
-      .then(data => {
-        updateCounter(data);
-        // You can add more logic here if needed
-      });
-  }
-
-  // Initialize the widget
-  init();
-</script>
-
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const myChart = new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: date,
+                        datasets: [{
+                            label: 'Uprun LCT',
+                            data: uprun,
+                            borderColor: 'rgb(30, 160, 30)',
+                            tension: 0.1
+                        }, {
+                            label: 'Downrun LCT',
+                            data: downrun,
+                            borderColor: 'rgb(160, 50, 30)',
+                            tension: 0.1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            x: {
+                                title: {
+                                    font: {
+                                        size: 24,
+                                        weight: "bold"
+                                    },
+                                    display: true,
+                                    text: 'Date'
+                                }
+                            },
+                            y: {
+                                title: {
+                                    font: {
+                                        size: 24,
+                                        weight: "bold"
+                                    },
+                                    display: true,
+                                    text: 'Spawning LCT Count'
+                                },
+                                beginAtZero: true
+                            }
+                        }
+                    }
+                });
+            })
+            .catch(error => {
+                console.error('Error fetching JSON data:', error);
+            });
+    </script>
 </body>
 </html>
