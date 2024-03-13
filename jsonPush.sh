@@ -5,6 +5,6 @@ sleep 15
 dateTime=$(date)
 
 git add .
-git commit -m "Scheduled push: $dateTime" > /dev/null
-git push origin main > /dev/null
+git commit --quiet -m "Scheduled push: $dateTime"
+git push --quiet origin main
 echo "push occurred: $dateTime"
