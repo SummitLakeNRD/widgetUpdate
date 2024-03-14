@@ -14,19 +14,19 @@
             .then(response => response.json())
             .then(data => {
                 // Pull date, cumulative uprun, and cumulative downrun count from json file
-                const date = data.map(item => item.date);
+                const dates = data.map(item => item.dates);
                 const uprun = data.map(item => item.uprun);
                 const downrun = data.map(item => item.downrun);
                 
                 // Index year value from first date entry of json file
-                const year = date[0].slice(0,4)
+                const year = dates[0].slice(0,4);
 
                 const ctx = document.getElementById('myChart').getContext('2d');
                 const myChart = new Chart(ctx, {
                     type: 'line',
                     // Read in data from json http request
                     data: {
-                        labels: date,
+                        labels: dates,
                         datasets: [{
                             label: 'Uprun LCT',
                             data: uprun,

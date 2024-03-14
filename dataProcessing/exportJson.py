@@ -8,10 +8,10 @@ jsonPath = os.path.join(os.getcwd(), 'dataProcessing', 'data.json')
 
 # Read in file and manipulate data to retun daily 
 # uprun and downrun dates
-df = pd.read_excel(filePath, parse_dates = ['date'])
+df = pd.read_excel(filePath, parse_dates = ['dates'])
 df = df.drop(columns=['comments', 'time', 'personnel'])
-df['date'] = df['date'].dt.strftime('%Y-%m-%d')
-df = df.groupby(by=["date"]).sum()
+df['dates'] = df['dates'].dt.strftime('%Y-%m-%d')
+df = df.groupby(by=["dates"]).sum()
 df = df.reset_index()
 df['uprun'] = df['uprun'].cumsum()
 df['downrun'] = df['downrun'].cumsum()
