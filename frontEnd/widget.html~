@@ -46,15 +46,15 @@
                                 data: uprun,
                                 borderColor: 'rgb(0, 158, 96)',
                                 tension: 0.1,
-				                pointRadius: 6,
-				                hoverRadius: 12
+				pointRadius: 5,
+				hoverRadius: 10
                             }, {
                                 label: 'Downrun LCT',
                                 data: downrun,
                                 borderColor: 'rgb(230, 100, 81)',
                                 tension: 0.1,
-				                pointRadius: 6,
-				                hoverRadius: 12
+				pointRadius: 5,
+				hoverRadius: 10
                             }]
                         },
                         // Adjust aesthetics
@@ -126,14 +126,13 @@
                     // Function to set canvas size based on window size
                     function setCanvasSize() {
                         canvas.width = window.innerWidth;
-			            console.log(canvas.width);
                         canvas.height = window.innerHeight; 
                         // Adjust font sizes dynamically based on canvas size
                         const fontSizeTitle = Math.min(canvas.width / 30, 36);
                         const fontSizeAxis = Math.min(canvas.width / 50, 24);
                         const fontSizeLegend = Math.min(canvas.width / 60, 24);
-			            const pointSize = Math.min(canvas.width / 200, 6);
-			            const hoverSize = Math.min(canvas.width / 100, 12);
+			const pointRadius = Math.min(canvas.width / 100, 5);
+			const hoverRadius = Math.min(canvas.width / 100, 10);
 
                         // Update chart options with dynamically scaled font sizes
                         myChart.options.plugins.title.font.size = fontSizeTitle;
@@ -142,12 +141,8 @@
                         myChart.options.scales.y.title.font.size = fontSizeAxis;
                         myChart.options.scales.y.ticks.font.size = Math.min(fontSizeAxis * 0.7, 14);
                         myChart.options.plugins.legend.labels.font.size = fontSizeLegend;
-
-                        // Update chart with point and hover size dynamically
-                        myChart.data.datasets.forEach(dataset => {
-                            dataset.pointRadius = pointSize;
-                            dataset.hoverRadius = hoverSize;
-                        });
+			myChart.data.datasets.pointRadius = pointRadius;
+			myChart.data.datasets.hoverRadius = hoverRadius;
 
                         // Update the chart with above params
                         myChart.update();
