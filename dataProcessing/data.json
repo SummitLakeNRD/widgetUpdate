@@ -1,32 +1,7 @@
 [
     {
-        "dates": "2024-03-13",
-        "uprun": 10,
-        "downrun": 5
-    },
-    {
-        "dates": "2024-03-14",
-        "uprun": 23,
-        "downrun": 11
-    },
-    {
-        "dates": "2024-03-15",
-        "uprun": 31,
-        "downrun": 17
-    },
-    {
-        "dates": "2024-03-16",
-        "uprun": 41,
-        "downrun": 20
-    },
-    {
-        "dates": "2024-03-17",
-        "uprun": 67,
-        "downrun": 29
-    },
-    {
-        "dates": "2024-03-18",
-        "uprun": 73,
-        "downrun": 30
+        "dates": "2024-04-19",
+        "uprun": 0,
+        "downrun": 0
     }
 ]
