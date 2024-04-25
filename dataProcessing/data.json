@@ -28,5 +28,10 @@
         "dates": "2024-04-24",
         "uprun": 4,
         "downrun": 0
+    },
+    {
+        "dates": "2024-04-25",
+        "uprun": 8,
+        "downrun": 0
     }
 ]
