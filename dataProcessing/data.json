@@ -63,5 +63,10 @@
         "dates": "2024-05-01",
         "uprun": 61,
         "downrun": 3
+    },
+    {
+        "dates": "2024-05-02",
+        "uprun": 61,
+        "downrun": 3
     }
 ]
