@@ -1,7 +1,9 @@
-Traceback (most recent call last):
-  File "/home/fishtrap/Desktop/widgetUpdate/./dataProcessing/exportJson.py", line 13, in <module>
-    df['dates'] = df['dates'].dt.strftime('%Y-%m-%d')
-  File "/home/fishtrap/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6296, in __getattr__
+ssh: Could not resolve hostname github.com: Name or service not known
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ome/fishtrap/.local/lib/python3.10/site-packages/pandas/core/generic.py", line 6296, in __getattr__
     return object.__getattribute__(self, name)
   File "/home/fishtrap/.local/lib/python3.10/site-packages/pandas/core/accessor.py", line 224, in __get__
     accessor_obj = self._accessor(obj)
