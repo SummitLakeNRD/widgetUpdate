@@ -1,167 +1,167 @@
 [
     {
         "dates": "2024-04-19",
-        "uprun": 0,
+        "uprun": 0.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-20",
-        "uprun": 0,
+        "uprun": 0.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-21",
-        "uprun": 0,
+        "uprun": 0.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-22",
-        "uprun": 0,
+        "uprun": 0.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-23",
-        "uprun": 2,
+        "uprun": 2.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-24",
-        "uprun": 4,
+        "uprun": 4.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-25",
-        "uprun": 12,
+        "uprun": 12.0,
         "downrun": 0
     },
     {
         "dates": "2024-04-26",
-        "uprun": 18,
+        "uprun": 18.0,
         "downrun": 1
     },
     {
         "dates": "2024-04-27",
-        "uprun": 26,
+        "uprun": 26.0,
         "downrun": 1
     },
     {
         "dates": "2024-04-28",
-        "uprun": 33,
+        "uprun": 33.0,
         "downrun": 2
     },
     {
         "dates": "2024-04-29",
-        "uprun": 38,
+        "uprun": 38.0,
         "downrun": 2
     },
     {
         "dates": "2024-04-30",
-        "uprun": 50,
+        "uprun": 50.0,
         "downrun": 3
     },
     {
         "dates": "2024-05-01",
-        "uprun": 61,
+        "uprun": 61.0,
         "downrun": 3
     },
     {
         "dates": "2024-05-02",
-        "uprun": 64,
+        "uprun": 64.0,
         "downrun": 3
     },
     {
         "dates": "2024-05-03",
-        "uprun": 66,
+        "uprun": 66.0,
         "downrun": 3
     },
     {
         "dates": "2024-05-04",
-        "uprun": 74,
+        "uprun": 74.0,
         "downrun": 3
     },
     {
         "dates": "2024-05-05",
-        "uprun": 74,
+        "uprun": 74.0,
         "downrun": 4
     },
     {
         "dates": "2024-05-06",
-        "uprun": 81,
+        "uprun": 81.0,
         "downrun": 4
     },
     {
         "dates": "2024-05-07",
-        "uprun": 85,
+        "uprun": 85.0,
         "downrun": 4
     },
     {
         "dates": "2024-05-08",
-        "uprun": 86,
+        "uprun": 86.0,
         "downrun": 4
     },
     {
         "dates": "2024-05-09",
-        "uprun": 97,
+        "uprun": 97.0,
         "downrun": 6
     },
     {
         "dates": "2024-05-10",
-        "uprun": 104,
+        "uprun": 104.0,
         "downrun": 7
     },
     {
         "dates": "2024-05-11",
-        "uprun": 109,
+        "uprun": 109.0,
         "downrun": 7
     },
     {
         "dates": "2024-05-12",
-        "uprun": 114,
+        "uprun": 114.0,
         "downrun": 8
     },
     {
         "dates": "2024-05-13",
-        "uprun": 125,
+        "uprun": 125.0,
         "downrun": 8
     },
     {
         "dates": "2024-05-14",
-        "uprun": 149,
+        "uprun": 149.0,
         "downrun": 8
     },
     {
         "dates": "2024-05-15",
-        "uprun": 165,
+        "uprun": 165.0,
         "downrun": 9
     },
     {
         "dates": "2024-05-16",
-        "uprun": 175,
+        "uprun": 175.0,
         "downrun": 10
     },
     {
         "dates": "2024-05-17",
-        "uprun": 188,
+        "uprun": 188.0,
         "downrun": 17
     },
     {
         "dates": "2024-05-18",
-        "uprun": 205,
+        "uprun": 205.0,
         "downrun": 19
     },
     {
         "dates": "2024-05-19",
-        "uprun": 215,
+        "uprun": 215.0,
         "downrun": 21
     },
     {
         "dates": "2024-05-20",
-        "uprun": 221,
+        "uprun": 221.0,
         "downrun": 29
     },
     {
         "dates": "2024-05-21",
-        "uprun": 223,
+        "uprun": 223.0,
         "downrun": 30
     }
 ]
