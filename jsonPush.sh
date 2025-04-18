@@ -1,6 +1,6 @@
 #!/bin/bash
 
-python3 ./dataProcessing/exportJson.py
+python3 /home/fishtrap/Desktop/widgetUpdate/dataProcessing/exportJson.py
 sleep 60
 dateTime=$(date)
 
