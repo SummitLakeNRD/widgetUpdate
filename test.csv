@@ -1,0 +1,80 @@
+dates,time,uprun,downrun,personnel,comments
+2025-04-14,18:55,0,0,"KF, AD","First trap check of season"
+2025-04-15,08:01,0,0,"KF, AD, MH, OG",
+2025-04-15,20:06,2,0,"AD, OG, MH",
+2025-04-16,08:19,2,0,"AD, OG, KF","1 SR with milt"
+2025-04-16,14:15,1,0,"PL, MH","1 SR in downrun, didn’t log"
+2025-04-16,14:51,3,0,"KF, AD, MH, OG, PL",
+2025-04-16,17:37,3,0,"KF, AD, MH, OG, PL","245 with milt included in uprun"
+2025-04-17,07:40,7,0,"KF, AD, MH, OG","1 LCT in downrun but was a fish processed yesterday evening so rereleased upstream"
+2025-04-17,17:47,4,0,"AD, KF",
+2025-04-18,08:52,6,0,"AD, KF","1 LCT in downrun but was a fish processed yesterday evening so rereleased upstream"
+2025-04-18,18:04,2,0,"KF, MM","1 LCT in downrun but was a fish processed yesterday evening so rereleased upstream"
+2025-04-19,08:45,1,0,"KF, MM","1 LCT in downrun but was a fish processed yesterday evening so rereleased upstream"
+2025-04-19,18:09,6,0,"KF, MM",
+2025-04-20,08:51,3,1,"KF, MM",
+2025-04-20,18:18,1,0,"KF, MM","There were more in UR earlier on camera, some still escaping after trap config change"
+2025-04-21,08:48,1,0,"KF, MM",
+2025-04-21,20:35,2,0,"OG, MAH, MY ",
+2025-04-22,08:17,1,0,"OG, MY",
+2025-04-22,13:56,1,0,"AD, OG",
+2025-04-22,18:06,4,0,"AD, OG",
+2025-04-23,08:05,1,0,"AD, OG",
+2025-04-23,13:30,1,0,"AD, OG",
+2025-04-23,18:57,2,1,"OG, MAH",
+2025-04-24,08:06,1,0,"OG, MY, MAH",
+2025-04-24,16:04,3,0,"MH, PL","1 SR with milt"
+2025-04-24,18:05,1,0,"MH, PL",
+2025-04-25,08:53,1,1,"MH, PL",
+2025-04-25,12:42,1,0,"MH, PL","1 SR with milt"
+2025-04-25,17:00,2,0,"MH, PL",
+2025-04-26,07:52,1,0,"MH, PL",
+2025-04-26,12:07,2,0,"MH, PL",
+2025-04-26,16:58,5,1,"MH, PL",
+2025-04-27,08:03,5,1,"MH, PL",
+2025-04-27,11:46,2,0,"MH, PL",
+2025-04-27,17:21,3,2,"MH, PL",
+2025-04-28,07:37,2,1,"MH, PL",
+2025-04-28,18:11,12,0,"AD, OG",
+2025-04-29,08:49,2,2,"AD, OG",
+2025-04-29,17:22,14,2,"AD, OG","1 SR with milt"
+2025-04-30,08:38,2,2,"AD, OG",
+2025-04-30,11:40,1,0,"AD, OG",
+2025-04-30,13:49,10,0,"AD, OG",
+2025-04-30,17:23,3,0,"AD, OG",
+2025-05-01,08:34,2,1,"AD, OG",
+2025-05-01,13:24,2,0,"AD, OG",
+2025-05-01,17:01,4,0,"AD, OG",
+2025-05-02,08:02,6,0,"AD, OG","Downrun tagged juv mortality"
+2025-05-02,14:03,2,1,"MH, PL","1 SR with milt"
+2025-05-02,17:46,4,1,"MH, PL","1 SR with eggs"
+2025-05-03,07:47,34,4,"MH, PL","1 Juvenile in uprun, not counted"
+2025-05-03,14:04,31,1,"MH, PL","1 SR "
+2025-05-03,19:35,19,2,"MH, PL",
+2025-05-04,08:15,21,6,"MH, PL",
+2025-05-04,12:50,14,0,"MH, PL",
+2025-05-04,17:09,34,8,"MH, PL",
+2025-05-05,07:38,9,5,"MH, PL",
+2025-05-05,20:52,38,0,"OG, EM","Processed fish in 3 separate trap checks due to meetings and juv nets; this data consists of 2/3 of 3-part trap check"
+2025-05-05,20:54,28,2,"OG, EM","1/3 of 3-part trap check previously mentioned"
+2025-05-06,09:03,7,1,"OG, EM",
+2025-05-06,14:28,10,1,"OG, EM",
+2025-05-06,19:28,21,1,"OG, EM",
+2025-05-07,08:50,7,3,"OG, EM",
+2025-05-07,13:41,9,1,"OG, EM",
+2025-05-07,20:11,20,2,"OG, EM","1 uprun mortality, LCT caught in grate between uprun and downrun trap. Fish processed and released downstream."
+2025-05-08,07:32,5,2,"OG, EM",
+2025-05-08,13:34,9,0,"MH AD",
+2025-05-08,17:09,13,1,"AD, MH",
+2025-05-09,08:04,3,3,"MH, AD","1 SR in Uprun, not counted"
+2025-05-09,12:24,4,0,"AD, MH",
+2025-05-09,17:27,2,4,"AD, MH",
+2025-05-10,09:03,8,5,"AD, MH","1 SR not counted"
+2025-05-10,13:30,7,3,"AD, MH",
+2025-05-10,17:51,20,0,"AD, MH",
+2025-05-11,08:41,13,5,"AD, MH","1 MORT, not counted (processed then released downstream) (No tag)"
+2025-05-11,13:54,11,6,"AD, MH","1 Juvenile in downrun, not counted, placed into overnight bag "
+2025-05-11,17:54,26,1,"AD, MH",
+2025-05-12,8:24,8,4,"AD, MH",
+2025-05-12,09:33,0,0,"AD, MH",
+2025-05-12,18:13,0,4,"MM, OG",
