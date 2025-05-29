@@ -216,7 +216,12 @@
     },
     {
         "dates": "2025-05-27",
-        "uprun": 716,
-        "downrun": 297
+        "uprun": 713,
+        "downrun": 293
+    },
+    {
+        "dates": "2025-05-28",
+        "uprun": 719,
+        "downrun": 298
     }
 ]
