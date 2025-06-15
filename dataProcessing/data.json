@@ -307,11 +307,11 @@
     {
         "dates": "2025-06-14",
         "uprun": 730,
-        "downrun": 471
+        "downrun": 480
     },
     {
         "dates": "2025-06-15",
         "uprun": 730,
-        "downrun": 480
+        "downrun": 484
     }
 ]
